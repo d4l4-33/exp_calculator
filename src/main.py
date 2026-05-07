@@ -1,13 +1,6 @@
 #import tkinter as tk
-from calculate_exp import *
-from gui import run_GUI, GUI
-
-
-
-
-
-
-
+#from calculate_exp import *
+from gui import GUI
 
 
 def main():
@@ -16,8 +9,6 @@ def main():
 if __name__ == "__main__":
     main()
 
-
-    
 
 ##OLD Terminal-based main
 """
