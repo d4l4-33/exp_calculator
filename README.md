@@ -8,16 +8,15 @@ I started with making a TUI-based calculator and wanted to try my hand at a GUI 
 
 ### To copy the repository:
 
-> git clone https://github.com/d4l4-33/exp_calculator
-> cd exp_calculator
+´git clone https://github.com/d4l4-33/exp_calculator´
+´cd exp_calculator´
 
 ### For the TUI version:
-
-> ./main_tui.sh
+´./main_tui.sh´
 
 ### For the GUI version:
 
-> ./main_gui.sh
+´./main_gui.sh´
 
 #### Shortcuts in the GUI:
 - Escape: Close the calculator
