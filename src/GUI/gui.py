@@ -10,9 +10,9 @@ class GUI:
         #startup
         self.root = tk.Tk()
         self.root.resizable(False, False)
-        self.root.geometry('400x550') #Don't Work
+        self.root.geometry('400x550')
         self.root.title('Exp Calculator')
-        self.root.iconphoto(True, PhotoImage(file='exp_logo.png')) # Don't Work
+        self.root.iconphoto(True, PhotoImage(file='exp_logo.png'))
         self.root.config(background=BGR_COLOR,)
 
 
@@ -28,7 +28,7 @@ class GUI:
         self.start_frame = tk.Frame(self.root, width=300, background=BUTTON_COLOR)
         #Level
         self.start_lvl = tk.Entry(self.start_frame, width=15)
-        self.start_lvl.insert(0, PLACEHOLDER_TEXT[0])
+        self.start_lvl.insert(0, PLACEHOLDER_TEXT[0], font=FONT_PLACEHOLDER, foreground=FRG_COLOR)
         self.start_lvl.bind('<FocusIn>', self.start_lvl_focus_in)
         self.start_lvl.bind('<FocusOut>', self.start_lvl_focus_out)
         self.start_lvl.bind('<Return>', self.submit_start)
