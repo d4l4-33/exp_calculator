@@ -90,4 +90,4 @@ def calculate_exp(input): #input is a tuple of the start and end dictionaries, k
     
     print(f"This results in {round(exp_per_second * 3600, 2)}% per hour and your next level up should be at {time.strftime('%H:%M', time.localtime(next_level))}" + extra_msg + "\n")
     time.sleep(2)
-    print("=========\nNew calculation")
+    print("=========\nNew calculation\nTo exit type 'exit'")

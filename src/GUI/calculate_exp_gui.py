@@ -12,7 +12,6 @@ def start_exp(start_lvl, start_exp):
 
     try:
         start_exp = start_exp.replace(',', '.', 1).replace('%', '')
-
         if float(start_exp) >= 100.00:
             return 'Percentage must be less than 100'
     except ValueError:
@@ -62,8 +61,9 @@ def calculate_exp(start, end):
     next_level = time.time() + ((100 - calc_end['exp']) / exp_per_second)
     extra_msg = ""
     if exp_per_second > 1000/3600:
-        extra_msg = "\n\nThat's a lot... You must be on a private server..."
+        extra_msg = "\n\nThat's a lot... You must be on a private server...\n"
     elif exp_per_second < 1/3600:
-        extra_msg =  "\n\nWow... are you even trying?"
+        extra_msg =  "\n\nWow... are you even trying?\n"
     
-    return(f"You gained {gained_levels} and {round(gained_exp, 2)}% in {round(seconds_spent/60, 2)} minutes\nThis results in {round(exp_per_second * 3600, 2)}% per hour.\nYour next level up should be at {time.strftime('%H:%M', time.localtime(next_level))}" + extra_msg + "\n")
+    return(f"You gained {gained_levels} and {round(gained_exp, 2)}% in {round(seconds_spent/60, 2)} minutes\nThis results in {round(exp_per_second * 3600, 2)}% per hour.\nYour next level up should be at {time.strftime('%H:%M', time.localtime(next_level))}" + extra_msg + "\nPress Ctrl + Return to clear")
+
