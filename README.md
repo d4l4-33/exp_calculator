@@ -1,5 +1,8 @@
 # EXP Calculator by d4l4-33
 
+![Screenshot](./src/screenshot_exp.jpg)
+![Sceernshot Filled](./src/screenshot_exp_2.jpg)
+
 This is my first boot.dev personal project. My idea going into this was to make a generic exp/h application for grinding RPG-games that needed to be fed a starting percentage exp and by reading the system's clock it could estimate exp per hour when another percentage was put in. This could then be further developed to calculate gold/mesos/groschen/denari per hour by also recieving that information and finally if allowed get all that information automatically.
 
 I started with making a TUI-based calculator and wanted to try my hand at a GUI so I started looking into GUI. Because of that this project has two diffrent modes with the same math. 
