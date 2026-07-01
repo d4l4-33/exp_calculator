@@ -28,7 +28,7 @@ def end_exp(start, end_lvl, end_exp):
     if len(start.keys()) == 0:
         return 'Start input required'
     try:
-        if int(end_lvl) < start['level']:
+        if int(end_lvl) < start['level'] or (int(end_lvl) == start['level'] and float(end_exp) < start['exp']):
             return "Ok... So you lost exp?"
     except ValueError:
         return 'Level must be whole numbers'

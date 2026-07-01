@@ -33,5 +33,4 @@ cd exp_calculator
 - Ctrl + Return: Clear
 - Tab: Jump between fields
 
-
 Hope it works! Otherwise find me on discord @d4l4
